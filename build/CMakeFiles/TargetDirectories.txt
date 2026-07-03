@@ -1,0 +1,3 @@
+/media/puffy/D/lofiHunter/build/CMakeFiles/MusicIdleGame.dir
+/media/puffy/D/lofiHunter/build/CMakeFiles/edit_cache.dir
+/media/puffy/D/lofiHunter/build/CMakeFiles/rebuild_cache.dir

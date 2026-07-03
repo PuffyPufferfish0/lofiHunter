@@ -1,5 +1,5 @@
-# lofiHunter
-lofiHunter project
+lofiHunter
+## lofiHunter project
 make sure you have nix installed
 run the following
 ```

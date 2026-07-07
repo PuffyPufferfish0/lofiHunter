@@ -14,12 +14,14 @@ pkgs.mkShell {
     pkg-config
     cargo
     rustc
+    pkgsCross.mingwW64.buildPackages.gcc # Windows Cross-Compiler
   ];
-
+  
   # Libraries we need to link against
   buildInputs = with pkgs; [
     glfw
     libGL
+    nlohmann_json # Added the JSON library!
     nixgl.auto.nixGLDefault # The magic wrapper!
     
     # Standard X11 libraries
@@ -34,9 +36,19 @@ pkgs.mkShell {
     export LD_LIBRARY_PATH=${pkgs.lib.makeLibraryPath [ pkgs.libGL pkgs.glfw pkgs.xorg.libX11 ]}:$LD_LIBRARY_PATH
     
     echo "======================================================"
-    echo "nixGL has been installed to bridge your graphics drivers."
+    echo " 	    Development Environment Loaded"
+    echo "======================================================"
+    echo "  - C++ and Rust compilers: Ready"
+    echo "  - Windows Cross-Compiler (MinGW): Ready"
+    echo "  - JSON Parser: Ready"
+    echo "  - nixGL: Installed"
     echo ""
-    echo "nixGL ./MusicIdleGame"
+    echo "  To build both Linux and Windows versions, run:"
+    echo "  $ make"
+    echo ""
+    echo "  To run the newly compiled Linux build, use:"
+    echo "  $ nixGL ./build_linux/MusicIdleGame"
     echo "======================================================"
   '';
 }
+

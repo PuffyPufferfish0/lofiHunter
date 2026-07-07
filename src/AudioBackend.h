@@ -1,7 +1,13 @@
 #pragma once
 
 #include <string>
+
+// Include OS-Specific Headers
+#ifdef _WIN32
+#include <windows.h>
+#else
 #include <sys/types.h>
+#endif
 
 class AudioBackend {
 public:
@@ -9,24 +15,35 @@ public:
     ~AudioBackend();
 
     // Process control
-    bool start();       // Spawns the lowfi CLI
-    void pause();       // Suspends the process (SIGSTOP)
-    void resume();      // Resumes the process (SIGCONT)
-    void stop();        // Kills the process (SIGKILL)
+    bool start();       
+    void pause();       
+    void resume();      
+    void stop();        
     void togglePlayPause();
 
     // State getters
     bool isRunning() const;
     bool isPaused() const;
     
-    // Reads any new terminal output from lowfi without freezing our UI
+    // Terminal interaction
     std::string pollOutput(); 
-
-    // Sends a string command directly to lowfi's standard input
     void sendCommand(const std::string& cmd);
 
 private:
-    pid_t m_pid;          // Process ID of the background lowfi instance
-    int m_pipeOut[2];     // Pipe to capture lowfi's terminal output
     bool m_isPaused;
+
+#ifdef _WIN32
+    // --- Windows Specific Variables ---
+    HANDLE m_hProcess;
+    HANDLE m_hPipeOutRead;   // To read lowfi's output
+    HANDLE m_hPipeInWrite;   // To send lowfi commands
+    DWORD m_processID;
+    
+    // Windows doesn't have simple pause/resume signals, so we need a custom helper
+    void suspendResumeThreads(bool suspend); 
+#else
+    // --- Linux/POSIX Specific Variables ---
+    pid_t m_pid;          
+    int m_pipeOut[2];     
+#endif
 };

@@ -150,48 +150,6 @@ CMakeFiles/MusicIdleGame.dir/src/AudioBackend.cpp.o: \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/bits/uses_allocator.h \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/bits/uses_allocator_args.h \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/tuple \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/unistd.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/posix_opt.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/environments.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/confname.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/getopt_posix.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/getopt_core.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/unistd.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/unistd-decl.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/unistd_ext.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/linux/close_range.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/sys/wait.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/signal.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/signum-generic.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/signum-arch.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/sig_atomic_t.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/siginfo_t.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/__sigval_t.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/siginfo-arch.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/siginfo-consts.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/siginfo-consts-arch.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/sigval_t.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/sigevent_t.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/sigevent-consts.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/sigaction.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/sigcontext.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/stack_t.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/sys/ucontext.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/sigstack.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/sigstksz.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/ss_flags.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/struct_sigstack.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/sigthread.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/signal_ext.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/idtype_t.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/fcntl.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/fcntl.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/fcntl-linux.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/struct_iovec.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/linux/falloc.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/stat.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/struct_stat.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/fcntl2.h \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/iostream \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/ostream \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/bits/ostream.h \
@@ -252,31 +210,6 @@ CMakeFiles/MusicIdleGame.dir/src/AudioBackend.cpp.o: \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/bits/ostream.tcc \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/istream \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/bits/istream.tcc \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/pty.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/termios.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-struct.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-c_cc.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-c_iflag.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-c_oflag.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-c_cflag.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-cbaud.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-c_lflag.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-tcflow.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-misc.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-baud.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/sys/ttydefaults.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/sys/ioctl.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/ioctls.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/asm/ioctls.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/asm-generic/ioctls.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/linux/ioctl.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/asm/ioctl.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/asm-generic/ioctl.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/linux/sockios.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/asm/sockios.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/asm-generic/sockios.h \
- /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/ioctl-types.h \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/regex \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/bitset \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/locale \
@@ -325,4 +258,71 @@ CMakeFiles/MusicIdleGame.dir/src/AudioBackend.cpp.o: \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/bits/regex.h \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/bits/regex.tcc \
  /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/bits/regex_executor.h \
- /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/bits/regex_executor.tcc
+ /nix/store/mjf8jlq9grydcdvyw6hb063x5c34g5gf-gcc-15.2.0/include/c++/15.2.0/bits/regex_executor.tcc \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/unistd.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/posix_opt.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/environments.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/confname.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/getopt_posix.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/getopt_core.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/unistd.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/unistd-decl.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/unistd_ext.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/linux/close_range.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/sys/wait.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/signal.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/signum-generic.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/signum-arch.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/sig_atomic_t.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/siginfo_t.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/__sigval_t.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/siginfo-arch.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/siginfo-consts.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/siginfo-consts-arch.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/sigval_t.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/sigevent_t.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/sigevent-consts.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/sigaction.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/sigcontext.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/stack_t.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/sys/ucontext.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/sigstack.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/sigstksz.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/ss_flags.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/struct_sigstack.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/sigthread.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/signal_ext.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/idtype_t.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/fcntl.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/fcntl.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/fcntl-linux.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/types/struct_iovec.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/linux/falloc.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/stat.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/struct_stat.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/fcntl2.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/pty.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/termios.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-struct.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-c_cc.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-c_iflag.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-c_oflag.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-c_cflag.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-cbaud.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-c_lflag.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-tcflow.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-misc.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/termios-baud.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/sys/ttydefaults.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/sys/ioctl.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/ioctls.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/asm/ioctls.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/asm-generic/ioctls.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/linux/ioctl.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/asm/ioctl.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/asm-generic/ioctl.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/linux/sockios.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/asm/sockios.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/asm-generic/sockios.h \
+ /nix/store/rwalsamz4246k8f1zzxa54qx7w3fbzdg-glibc-2.42-47-dev/include/bits/ioctl-types.h

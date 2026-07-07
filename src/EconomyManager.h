@@ -11,6 +11,8 @@ public:
     std::string attemptLogin(const std::string& userId, const std::string& password);
     std::string registerUser(const std::string& userId, const std::string& username, const std::string& password);
     bool isLoggedIn() const;
+    void logout();
+    std::string getUserId() const;
 
     // Call this once per frame in your main loop
     void update(bool isMusicPlaying, float boostMultiplier = 1.0f);

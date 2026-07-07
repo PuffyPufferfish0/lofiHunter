@@ -133,13 +133,16 @@ int main(int, char**) {
     bool showRegisterTab = false;
     char inId[64] = "", inPass[64] = "", regId[64] = "", regUser[64] = "", regPass[64] = "";
     std::string authMessage = "";
-    ImVec4 authMessageColor = ImVec4(1.0f, 0.0f, 0.0f, 1.0f); // Default to Red Error
+    ImVec4 authMessageColor = ImVec4(1.0f, 0.0f, 0.0f, 1.0f);
 
     bool userInitialized = false;
     std::string roomSaveFile = "";
     bool isTrackPlaying = true;
     std::string consoleOutput = "Waiting for lowfi...\n";
     char commandInput[128] = "";
+    
+    // UI State for User Data Editor
+    bool showUserDataModal = false;
 
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
@@ -148,9 +151,60 @@ int main(int, char**) {
         ImGui::NewFrame();
         
         // ==========================================
+        // MAIN MENU BAR
+        // ==========================================
+        if (economy.isLoggedIn()) {
+            if (ImGui::BeginMainMenuBar()) {
+                if (ImGui::BeginMenu("User")) {
+                    ImGui::TextDisabled("Logged in as: %s", economy.getUserId().c_str());
+                    ImGui::Separator();
+                    
+                    if (ImGui::MenuItem("Edit User Data")) {
+                        showUserDataModal = true;
+                    }
+                    
+                    if (ImGui::MenuItem("Logout")) {
+                        economy.logout();
+                    }
+                    
+                    ImGui::EndMenu();
+                }
+                ImGui::EndMainMenuBar();
+            }
+        }
+        
+        // Modal for editing user data
+        if (showUserDataModal) {
+            ImGui::SetNextWindowSize(ImVec2(300, 150), ImGuiCond_FirstUseEver);
+            if (ImGui::Begin("Edit User Data", &showUserDataModal)) {
+                ImGui::Text("Account settings for %s", economy.getUserId().c_str());
+                ImGui::Dummy(ImVec2(0.0f, 10.0f));
+                ImGui::TextDisabled("(Coming soon...)");
+                
+                ImGui::Dummy(ImVec2(0.0f, 10.0f));
+                if (ImGui::Button("Close", ImVec2(100, 30))) {
+                    showUserDataModal = false;
+                }
+            }
+            ImGui::End();
+        }
+
+        // ==========================================
         // 1. LOGIN & REGISTRATION SCREEN
         // ==========================================
         if (!economy.isLoggedIn()) {
+            
+            // Cleanup on logout so the next login starts fresh
+            if (userInitialized) {
+                userInitialized = false;
+                activeItems.clear();
+                audio.stop();
+                isTrackPlaying = true;
+                inId[0] = '\0';
+                inPass[0] = '\0';
+                authMessage = "";
+            }
+
             ImGui::SetNextWindowPos(ImGui::GetMainViewport()->GetCenter(), ImGuiCond_Always, ImVec2(0.5f, 0.5f));
             ImGui::Begin("lofiHunter Network", nullptr, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoMove);
             
@@ -179,7 +233,7 @@ int main(int, char**) {
                     if (!idStr.empty() && !passStr.empty()) {
                         authMessage = economy.attemptLogin(idStr, passStr);
                         if (authMessage.empty()) {
-                            // Login Success! (Handled by the EconomyManager)
+                            // Login Success!
                         } else {
                             authMessageColor = ImVec4(1.0f, 0.2f, 0.2f, 1.0f);
                         }
@@ -212,10 +266,10 @@ int main(int, char**) {
                         authMessage = economy.registerUser(idStr, userStr, passStr);
                         if (authMessage.empty()) {
                             authMessage = "Account created! Please Sign In.";
-                            authMessageColor = ImVec4(0.2f, 1.0f, 0.2f, 1.0f); // Green success
-                            showRegisterTab = false; // Kick them over to the sign in tab
+                            authMessageColor = ImVec4(0.2f, 1.0f, 0.2f, 1.0f); 
+                            showRegisterTab = false;
                         } else {
-                            authMessageColor = ImVec4(1.0f, 0.2f, 0.2f, 1.0f); // Red Error
+                            authMessageColor = ImVec4(1.0f, 0.2f, 0.2f, 1.0f); 
                         }
                     } else {
                         authMessage = "Please fill out all fields.";
@@ -236,8 +290,7 @@ int main(int, char**) {
             // 2. MAIN GAME LOOP
             // ==========================================
             if (!userInitialized) {
-                std::string currentUserId(inId);
-                roomSaveFile = "../itemAssets/room_" + currentUserId + ".json";
+                roomSaveFile = "../itemAssets/room_" + economy.getUserId() + ".json";
                 if (!loadRoom(activeItems, roomSaveFile)) {
                     float startX = 50.0f;
                     for (const auto& pair : itemCatalog) {
@@ -264,8 +317,13 @@ int main(int, char**) {
 
             // ROOM CANVAS
             const ImGuiViewport* viewport = ImGui::GetMainViewport();
-            ImGui::SetNextWindowPos(viewport->WorkPos);
-            ImGui::SetNextWindowSize(viewport->WorkSize);
+            
+            // Adjust canvas position so it sits perfectly below the main menu bar!
+            ImVec2 workPos = viewport->WorkPos;
+            ImVec2 workSize = viewport->WorkSize;
+            
+            ImGui::SetNextWindowPos(workPos);
+            ImGui::SetNextWindowSize(workSize);
             ImGuiWindowFlags canvasFlags = ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoBringToFrontOnFocus | ImGuiWindowFlags_NoBackground;
             ImGui::Begin("Room Canvas", nullptr, canvasFlags);
             bool roomNeedsSaving = false;

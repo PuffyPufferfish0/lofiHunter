@@ -106,6 +106,18 @@ bool EconomyManager::isLoggedIn() const {
     return !m_userId.empty();
 }
 
+void EconomyManager::logout() {
+    m_userId = "";
+    m_balance.store(0);
+    m_secondsAccumulated = 0.0f;
+    m_syncTimer = 0.0f;
+    std::cout << "[Economy] Logged out." << std::endl;
+}
+
+std::string EconomyManager::getUserId() const {
+    return m_userId;
+}
+
 void EconomyManager::update(bool isMusicPlaying, float boostMultiplier) {
     auto currentTime = std::chrono::steady_clock::now();
     std::chrono::duration<float> deltaTime = currentTime - m_lastUpdateTime;
